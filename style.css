@@ -1,34 +1,73 @@
 @charset "UTF-8";
 *{
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --cor0: #ebe5c5;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+}
+@font-face {
+  font-family: 'droid';
+  src: url('fontes/idroid.otf') format(opentype);
+  font-weight: normal;
 }
 body{
-  background-color: black;
+  background-color: #4bbd77;
   color: white;
 }
 header{
-  background-color: #262626;
-  color: aliceblue;
-  position: fixed;
-  top: 0;
-  left: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px;
+  background: linear-gradient(to bottom, #4bbd77, rgb(0, 53, 0));
+  border-radius: 1px;
+  padding: 13px;
+  height: 134px;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.459);
+  margin: 0px;
   width: 100%;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  justify-content: space-around;
+}
+header>h1{
+  color: var(--cor0);
+}
+header>nav{
+  padding-top: 50px;
+  color: var(--cor1);
 }
 main{
+  font-family: Arial, Helvetica, sans-serif;
   background-color: aliceblue;
-  color: black;
-  margin-top: 100px;
-  padding: 200px;
-  width: 800px;
+  box-shadow: 0px 3px 11px -4px rgba(48, 70, 48, 0.651);
+  border-radius: 8px;
+  padding: 2px;
+  max-width: 800px;
+  min-width: 320px;
   margin: auto;
+  color: black;
 }
 footer{
   background-color: aliceblue;
   color: black;
+  margin: 10px;
 }
-.video{
-  top: 0;
-  left: 0;
-  object-fit: cover;
+h1{
+  color: green;
+  font-family: 'droid';
+}
+img{
+  width: 100%;
+}
+.video-container{
+  width: 100%;
 }
